@@ -24,6 +24,7 @@ public class InfoController {
      */
     @GetMapping("/info")
     public String info() {
-        return environment.getProperty("info.profile");
+        String info = environment.getProperty("info.profile");
+        return info;
     }
 }
